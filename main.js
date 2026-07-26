@@ -1,4 +1,4 @@
-/* Powerlink LLC — one-page interactions */
+/* PowerlynQ LLC — one-page interactions */
 (function () {
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());

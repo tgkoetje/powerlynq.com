@@ -1,4 +1,4 @@
 # powerlynq.com
 
-Public website for Powerlink LLC (powerlynq.com), hosted on GitHub Pages.
+Public website for PowerlynQ LLC (powerlynq.com), hosted on GitHub Pages.
 
