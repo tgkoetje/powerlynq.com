@@ -208,7 +208,6 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 }
 .section-head { max-width: 640px; margin-bottom: 2.5rem; }
 .section-head h2,
-.founder-copy h2,
 .split h2,
 .cta-panel h2 {
   font-size: clamp(1.65rem, 3vw, 2.15rem);
@@ -287,12 +286,17 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
   width: 7px; height: 7px; border-radius: 50%; background: var(--cyan-400);
 }
 
-/* Founder */
-.founder-solo { max-width: 720px; }
-.role {
-  color: var(--cyan-600); font-weight: 600; margin-bottom: 1rem; font-size: 0.98rem;
+/* Team contact strip */
+.team-contact {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem;
+  margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+  font-weight: 600; font-size: 0.95rem;
 }
-.founder-copy > p { color: var(--text-muted); margin-bottom: 1.25rem; }
+.team-contact .text-muted-inline {
+  font-weight: 500; color: var(--text-muted); margin: 0;
+}
+.team-contact a { color: var(--navy-800); }
+.team-contact a:hover { color: var(--cyan-600); }
 
 /* Secondary page hero */
 .page-hero {
@@ -359,20 +363,6 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
   font-weight: 500;
 }
 .consulting-note a:hover { color: var(--cyan-600); }
-.highlights { display: grid; gap: 0.75rem; margin-bottom: 1.5rem; }
-.highlights li {
-  padding: 0.85rem 1rem; border-radius: 10px;
-  background: var(--white); border: 1px solid var(--border);
-  color: var(--text-muted); font-size: 0.96rem;
-}
-.highlights strong { color: var(--navy-900); }
-.founder-contact {
-  display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem;
-  font-weight: 600; font-size: 0.95rem;
-}
-.founder-contact a { color: var(--navy-800); }
-.founder-contact a:hover { color: var(--cyan-600); }
-
 /* Advantage */
 .advantage-grid {
   display: grid; gap: 1rem;
