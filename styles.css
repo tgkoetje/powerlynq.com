@@ -253,6 +253,7 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 }
 @media (min-width: 1000px) {
   .market-grid { grid-template-columns: repeat(4, 1fr); }
+  .market-grid-3 { grid-template-columns: repeat(3, 1fr); }
 }
 .market {
   background: var(--slate-50); border: 1px solid var(--border);
@@ -288,15 +289,33 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 
 /* Team contact strip */
 .team-contact {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem;
   margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
-  font-weight: 600; font-size: 0.95rem;
 }
-.team-contact .text-muted-inline {
-  font-weight: 500; color: var(--text-muted); margin: 0;
+
+.footer-actions {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem;
+  margin: 0.5rem 0 0.35rem;
+  justify-content: flex-start;
 }
-.team-contact a { color: var(--navy-800); }
-.team-contact a:hover { color: var(--cyan-600); }
+@media (min-width: 700px) {
+  .footer-meta .footer-actions { justify-content: flex-end; }
+}
+.btn-footer {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.55rem 1.1rem; border-radius: 999px; font-weight: 600; font-size: 0.88rem;
+  background: var(--cyan-500); color: var(--navy-950) !important;
+  border: none; transition: background var(--ease), transform var(--ease);
+}
+.btn-footer:hover {
+  background: var(--cyan-400); color: var(--navy-950) !important;
+  transform: translateY(-1px);
+}
+.footer-phone {
+  color: var(--slate-300) !important;
+  font-weight: 600; font-size: 0.92rem;
+}
+.footer-phone:hover { color: var(--cyan-400) !important; }
 
 /* Secondary page hero */
 .page-hero {
