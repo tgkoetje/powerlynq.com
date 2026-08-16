@@ -38,6 +38,37 @@ In **Namecheap → Domain List → powerlynq.com → Manage → Advanced DNS**, 
 
 Also delete any leftover **URL Redirect**, **parking**, or **Wix** records that conflict.
 
+## Synergy Analyzer (`/analyzer/`)
+
+The analyzer is a static build in `analyzer/`. Grok runs on a **Cloudflare Worker** (API key never ships in this repo).
+
+1. In `C:\Users\tgkoe\powerlynq-synergy-analyzer`, keep `XAI_API_KEY` in `.env`.
+2. Deploy the Worker (opens a Cloudflare login in the browser the first time):
+
+   ```powershell
+   cd C:\Users\tgkoe\powerlynq-synergy-analyzer
+   .\scripts\deploy-worker.ps1
+   ```
+
+3. Copy the printed `*.workers.dev` URL into `analyzer/api-config.js`:
+
+   ```js
+   window.__POWERLYNQ_SYNERGY_API__ = "https://powerlynq-synergy.<subdomain>.workers.dev";
+   ```
+
+4. Rebuild/copy if the UI changed:
+
+   ```powershell
+   cd C:\Users\tgkoe\powerlynq-synergy-analyzer
+   .\scripts\publish-to-site.ps1
+   ```
+
+5. Commit and push this repo (`deploy.ps1` or `git push`).
+
+**First Grok email:** if Resend is not configured, the Worker uses FormSubmit. Check `engage@powerlynq.com` and confirm the activation message so later intakes land in the inbox.
+
+**Optional Namecheap (after Worker exists):** CNAME `api` → the `workers.dev` host, then point `api-config.js` at `https://api.powerlynq.com`. Apex/`www` stay on GitHub Pages.
+
 After DNS propagates (often 15–60 minutes, sometimes up to 24–48h):
 
 1. GitHub repo → **Settings → Pages**
