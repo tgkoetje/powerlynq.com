@@ -474,3 +474,32 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 .footer-meta a:hover { color: var(--cyan-400); }
 .footer-meta p { font-size: 0.92rem; margin-bottom: 0.25rem; }
 .fine { font-size: 0.82rem !important; color: var(--slate-500); margin-top: 0.5rem !important; }
+
+/* Analyzer feature + SEO article */
+.hero-wide { max-width: 920px; }
+.hero-tool {
+  margin-top: 2rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.5rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 640px;
+}
+.hero-tool .eyebrow { margin-bottom: 0.4rem; }
+.hero-tool h2 {
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--navy-900);
+  margin-bottom: 0.45rem;
+}
+.hero-tool p { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1rem; }
+.prose-seo { max-width: 72ch; }
+.prose-seo p { color: var(--text-muted); margin-bottom: 1rem; }
+.prose-seo h3 {
+  color: var(--navy-900);
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.6rem;
+  letter-spacing: -0.02em;
+}
+.prose-seo strong { color: var(--navy-900); font-weight: 600; }

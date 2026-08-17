@@ -2,9 +2,10 @@
 
 Public website for PowerlynQ LLC (powerlynq.com), hosted on GitHub Pages.
 
-- Home: `/`
+- Home: `/` (consulting-first; Synergy Analyzer is the hero tool)
 - Consulting: `/consulting.html`
-- Synergy Analyzer: `/analyzer/` (static React app)
+- Synergy Analyzer: `/analyzer/`
+- Representation: `/representation.html` (secondary)
 
 Contact: [engage@powerlynq.com](mailto:engage@powerlynq.com)
 
