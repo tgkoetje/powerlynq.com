@@ -494,6 +494,49 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
   margin-bottom: 0.45rem;
 }
 .hero-tool p { color: var(--text-muted); font-size: 0.98rem; margin-bottom: 1rem; }
+.hero-phone {
+  font-size: 0.95rem;
+  color: var(--slate-600);
+  margin: -0.5rem 0 0.5rem;
+}
+.hero-phone a { font-weight: 600; color: var(--navy-900); }
+.hero-phone a:hover { color: var(--cyan-600); }
+
+.rank-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  font-size: 0.95rem;
+  margin: 1.25rem 0 2rem;
+}
+.rank-table th, .rank-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.rank-table th {
+  background: var(--navy-900);
+  color: var(--white);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.rank-table tr:last-child td { border-bottom: 0; }
+.rank-score { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rank-note { font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem; }
+.disclaimer-box {
+  background: var(--slate-100);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 2rem;
+}
 .prose-seo { max-width: 72ch; }
 .prose-seo p { color: var(--text-muted); margin-bottom: 1rem; }
 .prose-seo h3 {
