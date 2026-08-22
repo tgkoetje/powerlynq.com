@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" fill="none">
+  <g transform="translate(20, 20) scale(0.4)">
+    <rect x="36" y="36" width="728" height="728" rx="128" ry="128" fill="#0a1628"/>
+    <rect x="36" y="36" width="728" height="728" rx="128" ry="128" fill="none" stroke="#22d3ee" stroke-width="14"/>
+    <path d="M305 255 L175 400 L305 545" stroke="#94a3b8" stroke-width="56" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M495 255 L625 400 L495 545" stroke="#94a3b8" stroke-width="56" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="270" y="355" width="260" height="90" rx="45" ry="45" fill="#22d3ee"/>
+  </g>
+  <text x="360" y="215" font-family="Inter, system-ui, -apple-system, Arial, Helvetica, sans-serif" font-size="92" font-weight="600" fill="#ffffff" letter-spacing="-1.5">PowerlynQ</text>
+</svg>

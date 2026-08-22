@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" fill="none">
+  <!-- Pure connection mark without container - for use on existing dark or solid backgrounds -->
+  <path d="M200 50 L50 200 L200 350" 
+        stroke="#94a3b8" 
+        stroke-width="48" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  <path d="M400 50 L550 200 L400 350" 
+        stroke="#94a3b8" 
+        stroke-width="48" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  <rect x="170" y="155" width="260" height="90" rx="45" ry="45" fill="#22d3ee"/>
+</svg>

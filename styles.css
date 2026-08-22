@@ -82,18 +82,28 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
 .logo {
   display: inline-flex; align-items: center; gap: 0.65rem;
   color: var(--navy-900); font-weight: 700; letter-spacing: -0.02em;
+  line-height: 0;
 }
 .logo:hover { color: var(--navy-900); }
+.logo-lockup {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 200px;
+}
+.logo-footer .logo-lockup {
+  height: 42px;
+  max-width: 210px;
+}
+.logo-icon {
+  display: block;
+  height: 36px;
+  width: 36px;
+}
 .logo-mark {
   width: 28px; height: 28px; border-radius: 8px;
   background: linear-gradient(145deg, var(--navy-800), var(--navy-950));
   position: relative; box-shadow: inset 0 0 0 1px rgba(34, 211, 238, 0.35);
-}
-.logo-mark::after {
-  content: ""; position: absolute; inset: 8px 6px 8px 6px;
-  border-radius: 2px;
-  background: linear-gradient(90deg, transparent, var(--cyan-400), transparent);
-  box-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
 }
 .logo-text { font-size: 1.15rem; }
 .logo-llc { font-weight: 500; color: var(--slate-500); font-size: 0.85em; }
