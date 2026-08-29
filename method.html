@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How scoring works | PowerlynQ</title>
+  <meta name="description" content="How the PowerlynQ Line-Card Analyzer builds existing-card and new-line scores. Experimental method. Not advice." />
+  <link rel="canonical" href="https://powerlynq.com/method.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="analytics-config.js"></script>
+  <script src="analytics.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="PowerlynQ home">
+        <img class="logo-lockup" src="logos/powerlynq-lockup-light.svg" alt="PowerlynQ" width="1100" height="360" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="/analyzer/">Analyzer</a>
+        <a href="line-card-index.html">Public index</a>
+        <a href="method.html" aria-current="page">Method</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" hidden>
+      <a href="index.html">Home</a>
+      <a href="/analyzer/">Analyzer</a>
+      <a href="line-card-index.html">Public index</a>
+      <a href="method.html">Method</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <p class="eyebrow">Method</p>
+        <h1>How scores are built</h1>
+        <p class="lead">Short description of an experimental screen. Not a standard, not a certification, not a prediction of sales.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container prose-seo">
+        <h2>Two scores, one scale</h2>
+        <p>Each run produces an <strong>existing-card</strong> score (0–100) and a <strong>new-line</strong> score (0–100). The first looks only at the published book as submitted. The second looks at how a candidate factory or principal sits against that book.</p>
+        <p>Bands used by this prototype: 85–100 exceptional coherence on the published facts; 70–84 strong; 55–69 moderate; 40–54 limited; 0–39 high friction or conflict on those facts. Same bands appear on the public index.</p>
+        <h2>Inputs</h2>
+        <p>A current published line card (URL and/or pasted principal list). A candidate factory or principal (URL and/or short product description). Optional territory notes, customer types, and number of outside people.</p>
+        <p>When URLs are given, this prototype retrieves the public page and extracts visible text. It does not log in, scrape behind paywalls, or invent brands that are not in the intake or the page.</p>
+        <h2>Factors</h2>
+        <ul class="check-list">
+          <li>Shared-call potential (do the published customers and categories look like the same visit?)</li>
+          <li>Technical overlap (does the candidate sit next to named categories, or in a different stack?)</li>
+          <li>Conflict / exclusivity risk from public language (same slot, competing catalogs, “exclusive” claims on the page)</li>
+          <li>Card load (how crowded the published list appears)</li>
+        </ul>
+        <h2>What a score is not</h2>
+        <p>Not a legal review. Not a sales forecast. Not permission to sign. Not compensation advice. Not an exclusivity opinion. Public pages can be stale or incomplete. The model can be wrong.</p>
+        <h2>Disabled categories</h2>
+        <p>This prototype is not built for process fluids, specialty chemicals, metalworking fluids, lubricants, or food ingredients. If those categories appear in the intake, no report is produced.</p>
+        <p>Focus of examples and the public index: metal components, electro-mechanical systems, thermal products, aerospace/defense hardware, medical devices, industrial OEM, electronics hardware.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p class="fine">PowerlynQ is a personal, non-commercial research prototype. It is not a consultancy, agency, or manufacturers’ representative. It is not affiliated with any employer. Scores are experimental and may be wrong. Do not rely on them to add or drop a line. No engagements accepted.</p>
+      <p class="fine" style="margin-top:1rem"><a href="index.html">Home</a> · <a href="/analyzer/">Analyzer</a> · <a href="line-card-index.html">Public index</a> · <a href="method.html">Method</a> · <a href="disclaimer.html">Disclaimer</a></p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
